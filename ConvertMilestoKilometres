@@ -1,0 +1,33 @@
+/*Practical 2.1 Questions 4 
+Joe Fogarty
+05.01.2019
+Program to convert miles to kilometres. 
+ 1 km equals 1.609miles 
+kms = 1.609 * miles  */
+
+import java.util.*;
+public class ConvertMilestoKilometres
+{
+   public static void main(String args[])
+   {
+      Scanner keyboardIn = new Scanner(System.in);
+      //Declare variables
+     
+      double miles,kilometres;
+   
+      //Assign values
+      //Get user input
+      System.out.print("Miles:");
+      miles = keyboardIn.nextDouble();
+     
+    
+      //Calculate Miles to Kilometres
+      
+      kilometres = 1.609 * miles;
+ 
+      //Display Results
+    System.out.print("Miles Converted to kilometres:"+kilometres);
+   } 
+}
+      
+
