@@ -1,0 +1,30 @@
+ /* Program to add any 2 numbers*/ 
+
+import java.util.*;
+public class Addnum 
+
+{ 
+
+   public static void main(String [] args) 
+
+   { 
+
+      Scanner keyboardIn = new Scanner(System.in); 
+
+      int num1, num2, result; 
+
+      System.out.print("Enter number 1: "); 
+
+      num1 = keyboardIn.nextInt(); 
+
+      System.out.print("Enter number 2: "); 
+
+      num2 = keyboardIn.nextInt(); 
+
+      result = num1 + num2; 
+
+      System.out.println("The result of the 2 numbers is " +result); 
+
+} 
+
+} 
