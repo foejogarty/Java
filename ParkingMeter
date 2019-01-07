@@ -1,0 +1,36 @@
+/*Program to Calculate the Cost of Parking per hour, and change owed.
+The hourly rate to park in a car park is 60cents.  
+Cost = hours * RATE 
+Change = moneyin – cost */
+
+import java.util.*;
+public class Parking
+{
+   public static void main(String args[])
+   {
+      Scanner keyboardIn = new Scanner(System.in);
+      
+      //Declare variables
+     
+      double totalhours,cost,moneyin, change;
+      final double hourlyrate = 0.60;
+    
+      //Assign values
+      //Get user input
+      
+      System.out.print("Enter Total Hours Parked:");
+      totalhours = keyboardIn.nextDouble();
+      System.out.print("Money In:");
+      moneyin = keyboardIn.nextDouble();
+      
+      //Calculate the total hours parked, and change
+      
+      cost = totalhours * hourlyrate; 
+      change = moneyin - cost;
+      
+      //Display Results
+    
+    System.out.print("Cost per Hour equals "+cost+ " and Change given equals "+change);
+   } 
+}
+      
