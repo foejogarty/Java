@@ -1,0 +1,50 @@
+// The price of a computer is 550 euro.  If an order of 30 or more is placed the computers will cost 500 euro each. 
+// Write a program to ask the user how many computers they want to buy.  
+// The program should then calculate and display the total cost of the order. 
+
+
+import java.util.Scanner;
+
+public class Computer
+
+{ 
+   public static void main(String [] args)
+   
+   { 
+   
+      Scanner keyboardIn = new Scanner(System.in);
+      
+       // Declare variables     
+      double order, quantity, cost, totalprice ;
+      final double discount_price = 500;
+      final double reg_price = 550;
+      
+       // Discounted price of 30 or more computers 500
+       // Regurlar price of 30 or less computers 550
+       // User Input for each of the books
+       
+      System.out.print(" Enter quantity of Computers to be ordered : ");
+      quantity = keyboardIn.nextDouble();
+     
+      // Calculate
+      if ( quantity >= 30 )
+      { 
+        totalprice =  quantity * discount_price;
+    
+      //Display results of calculations
+         System.out.println(" Total price of thirty or more computers " + totalprice);
+      }     
+      else if ( quantity <= 30 )
+      {
+        totalprice = quantity * reg_price; 
+        
+        System.out.println( " Total price of thirty or less computers " + totalprice);
+      }
+      }
+      }
+          
+      
+      
+     
+      
+  
